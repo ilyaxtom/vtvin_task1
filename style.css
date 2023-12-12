@@ -4,7 +4,7 @@
     --accent_color: #10BB87;
     --head1: 36px;
     --head2: 24px;
-    --ext_p: 14px;
+    --ext_p: 18px;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Roboto&display=swap');
@@ -34,6 +34,14 @@ ul {
     list-style: none;
     display: flex;
     padding: 0;
+}
+
+h1 {
+    margin: 0;
+}
+
+p {
+    margin: 0;
 }
 
 /*HEADER*/
@@ -217,5 +225,112 @@ nav > .links > li:last-child, .buttons > a:last-child {
         padding: 5px 20px;
         text-align: center;
         font-size: var(--head2);
+    }
+}
+
+/*MAIN BLOCK*/
+.head_section {
+    width: 50%;
+    min-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 105px;
+    box-sizing: content-box;
+    padding-bottom: 64px;
+    border-bottom: #F2F2F2 2px solid;
+}
+
+.head_section > .text {
+    width: 45%;
+}
+
+.head_section > .text > h1 {
+    font-size: var(--head1);
+}
+
+.head_section > .text > p {
+    font-size: var(--ext_p);
+    margin-top: 44px;
+}
+
+.head_section > .text > p:nth-child(3) {
+    margin-bottom: 30px;
+}
+
+.head_section > .text > a {
+    border-radius: 10px;
+    background: #10BB87;
+    box-shadow: 0px 9px 25px -4px rgba(72, 123, 108, 0.50);
+    color: #fff;
+    padding: 12px 30px;
+    font-size: var(--ext_p);
+    box-sizing: content-box;
+}
+
+.head_section > img {
+    width: 50%;
+    border-radius: 28px;
+}
+
+@media (max-width: 960px) {
+    .head_section {
+        width: 91%;
+        min-width: 480px;
+        height: 500px;
+    }
+
+    .head_section > .text {
+        width: 51%;
+        font-size: var(--head2);
+    }
+
+    .head_section > .text > p {
+        margin-top: 10px;
+    }
+
+    .head_section > .text > p:nth-child(3) {
+        margin-bottom: 20px;
+    }
+
+    .head_section > img {
+        width: 46%;
+        object-fit: cover;
+    }
+}
+
+@media (max-width: 480px) {
+    .head_section {
+        width: 94%;
+        flex-direction: column-reverse;
+        min-width: 240px;
+        margin: 0 auto;
+        margin-top: 12px;
+        height: auto;
+        padding-bottom: 50px;
+    }
+
+    .head_section > .text {
+        width: 100%;
+    }
+    
+    .head_section > .text > h1 {
+        font-size: var(--head2);
+    }
+    
+    .head_section > .text > p {
+        margin-top: 28px;
+    }
+    
+    .head_section > .text > p:nth-child(3) {
+        margin-bottom: 30px;
+    }
+    
+    .head_section > .text > a {
+    }
+    
+    .head_section > img {
+        width: 100%;
+        margin-bottom: 50px;
     }
 }
