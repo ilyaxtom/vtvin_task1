@@ -335,7 +335,7 @@ nav > .links > li:last-child, .buttons > a:last-child {
     }
 }
 
-/*CARDS*/
+/*ADVATAGES*/
 
 section.cards {
     width: 91%;
@@ -377,6 +377,90 @@ section.cards > .card > p:nth-child(3) {
 
 @media (max-width: 850px) {
     section.cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/*SERVICES*/
+
+.services {
+    width: 91%;
+    max-width: 965px;
+    margin: 0 auto;
+    margin-top: 85px;
+}
+
+.services > span {
+    font-size: var(--head2);
+    font-weight: 600;
+    height: 32px;
+    display: inline-flex;
+}
+
+.services > a {
+    display: inline-flex;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.15);
+    margin-left: 33px;
+}
+
+.services > a > img {
+    width: 20px;
+    margin: auto;
+}
+
+.services > .cards {
+    width: 100%;
+    margin-top: 63px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(170px, 230px));
+    gap: 64px;
+}
+
+.services > .cards > .card {
+    padding-right: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.services > .cards > .card > img{
+    height: 50px;
+}
+
+.services > .cards > .card > p:nth-child(2) {
+    font-size: var(--ext_p);
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.services > .cards > .card > p:nth-child(3) {
+    font-size: 16px;
+    font-weight: 500;
+    color: #B3B3B3;
+}
+
+.services > .cards > .card > a {
+    border-radius: 10px;
+    box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.15);
+    padding: 12px 30px;
+    display: inline-block;
+    margin-top: 28px;
+}
+
+@media (max-width: 1060px) {
+    .services > .cards {
+        gap: 0;
+        grid-row-gap: 10px;
+    }
+}
+
+@media (max-width: 850px) {
+    .services > .cards {
         grid-template-columns: repeat(2, 1fr);
     }
 }
