@@ -334,3 +334,49 @@ nav > .links > li:last-child, .buttons > a:last-child {
         margin-bottom: 50px;
     }
 }
+
+/*CARDS*/
+
+section.cards {
+    width: 91%;
+    max-width: 960px;
+    margin: 0 auto;
+    margin-top: 24px;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+    gap: 64px;
+}
+
+section.cards > .card {
+    padding-right: 10px;
+}
+
+section.cards > .card > img {
+    height: 50px;
+}
+
+section.cards > .card > p:nth-child(2) {
+    font-size: var(--ext_p);
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+section.cards > .card > p:nth-child(3) {
+    font-size: 16px;
+    font-weight: 500;
+    color: #B3B3B3;
+}
+
+@media (max-width: 1060px) {
+    section.cards {
+        gap: 0;
+        grid-row-gap: 10px;
+    }
+}
+
+@media (max-width: 850px) {
+    section.cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
