@@ -187,18 +187,18 @@ nav > .links > li:last-child, .buttons > a:last-child {
         z-index: 2;
     }
 
-    .mobile_menu > a {
+    .mobile_menu > li {
         width: 25%;
         display: flex;
         justify-content: center;
         align-items: center;
     }
 
-    .mobile_menu > a > img {
+    .mobile_menu > li > img {
         width: 24px;
     }
 
-    .mobile_menu > a:nth-child(3) > img {
+    .mobile_menu > li:nth-child(3) > img {
         width: 28px;
     }
 
@@ -210,7 +210,7 @@ nav > .links > li:last-child, .buttons > a:last-child {
         justify-content: center;
     }
 
-    .mobile_menu > .clicked + .sub_menu {
+    .mobile_menu > .clicked > .sub_menu {
         display: flex;
         flex-direction: column;
         position: absolute;
