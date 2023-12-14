@@ -7,8 +7,6 @@
     --ext_p: 18px;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Roboto&display=swap');
-
 /*BASIC STYLES*/
 *, *::after, *::before {
     box-sizing: border-box;
@@ -130,6 +128,7 @@ nav > .links > li:last-child, .buttons > a:last-child {
 
     header > .logo > nav {
         display: flex;
+        align-items: center;
     }
 
     header > nav {
@@ -508,7 +507,7 @@ section.cards > .card > p:nth-child(3) {
 }
 
 .review > .comment > a {
-    width: 195px;
+    width: 210px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -651,7 +650,7 @@ section.cards > .card > p:nth-child(3) {
     .review > .window {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 32px 1fr 1fr;
-        height: 290px;
+        height: 350px;
     }
 
     .review > .window > .bar {
