@@ -193,11 +193,11 @@ nav > .links > li:last-child, .buttons > a:last-child {
         align-items: center;
     }
 
-    .mobile_menu > li > img {
+    .mobile_menu > li  img {
         width: 24px;
     }
 
-    .mobile_menu > li:nth-child(3) > img {
+    .mobile_menu > li:nth-child(3)  img {
         width: 28px;
     }
 

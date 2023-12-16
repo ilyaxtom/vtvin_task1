@@ -17,7 +17,7 @@ main p {
     margin-top: 10px;
 }
 
-address, p, a {
+address, p, main > a {
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
