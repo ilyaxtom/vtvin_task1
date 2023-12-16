@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/normalize.css" type="text/css">
     <link rel="stylesheet" href="styles/head_foot_style.css" type="text/css">
-    <link rel="stylesheet" href="styles/sale_style.css" type="text/css">
+    <link rel="stylesheet" href="styles/profile_style.css" type="text/css">
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
     <meta name = "keywords" content = "на майках, на майках Москва, майки печать купить, футболка с принтом">
     <meta name="description" content="Приветствуем вас в мире уникальных и персонализированных маек. Закажите высококачественную печать на майках для своей команды, мероприятия или в качестве оригинального подарка. Широкий выбор цветов, стилей и размеров ждет вас. Создайте свой уникальный стиль с нашим сервисом!">
-    <title>Акции Reklem</title>
+    <title>Профиль</title>
 </head>
 <body>
     <header>
@@ -93,41 +93,28 @@
             </li>
         </ul>
     </header>
-
     <script src="script.js"></script>
-
+    
     <div class="bread_crumbs">
         <ul>
             <li><a href="index.html">Главная</a></li>
-            <li>Акции</li>
+            <li>Вход</li>
         </ul>
     </div>
 
-    <main>
-        <h1>Акции</h1>
-        <div class="block">
-            <div class="card">
-                <img src="images/sale/pencil.jpeg" alt="Pencil">
-                <p>Карандаш с ластиком</p>
-                <p class="price">15 &#8381;</p>
-            </div>
-            <div class="card">
-                <img src="images/sale/ballon.jpeg" alt="Ballon">
-                <p>Новогодний шарик</p>
-                <p class="price">47 &#8381;</p>
-            </div>
-            <div class="card">
-                <img src="images/sale/powerbank.jpeg" alt="Powerbank">
-                <p>Повербанк</p>
-                <p class="price">390 &#8381;</p>
-            </div>
-            <div class="card">
-                <img src="images/sale/flesh.jpeg" alt="Flesh">
-                <p>Флеш-карта</p>
-                <p class="price">360 &#8381;</p>
-            </div>
-        </div>
-    </main>
+    <form action="get">
+        <legend>Вход</legend>
+        <label for="name">Имя пользователя</label>
+        <input id="name" type="text">
+
+        <label for="email">Электронная почта</label>
+        <input id="email" type="email">
+
+        <label for="pass">Пароль</label>
+        <input id="pass" type="password">
+
+        <button>Войти</button>
+    </form>
 
     <footer>
         <div class="first-grid">
