@@ -4,7 +4,7 @@ main {
     margin: 0 auto;
     margin-top: 105px;
     box-sizing: content-box;
-    padding-bottom: 64px;
+    padding-bottom: 32px;
     border-bottom: #F2F2F2 2px solid;
 }
 
@@ -17,6 +17,11 @@ main p {
     margin-top: 10px;
 }
 
+.price {
+    color: #FF2F54;
+    font-size: 24px;
+}
+
 main h2 {
     text-align: center;
 }
@@ -24,16 +29,28 @@ main h2 {
 .block {
     display: flex;
     justify-content: space-around;
+    margin-top: 10px;
 }
 
 .block .card {
-    width: auto;
+    width: 23%;
+    column-gap: 10px;
     padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.15);
+    transition: .3s;
+}
+
+@media (hover: hover) {
+    .block .card:hover {
+        transform: scale(1.1);
+    }
 }
 
 .block .card img {
     display: block;
     margin: 0 auto;
+    width: 100%;
 }
 
 
@@ -42,19 +59,25 @@ main h2 {
 }
 
 @media (max-width: 960px) {
-    .block {
-        flex-direction: column;
-    }
-    
-    .about {
+    main {
         width: 90%;
         min-width: auto;
         margin-top: 20px;
     }
+
+    .block {
+        flex-wrap: wrap;
+        column-gap: 0;
+    }
+
+    .block .card {
+        width: 40%;
+        margin: 20px;
+    }
 }
 
 @media (max-width: 480px) {
-    .block .card:first-child img {
+    .block .card {
         width: 100%;
     }
 }

@@ -228,6 +228,37 @@ nav > .links > li:last-child, .buttons > a:last-child {
     }
 }
 
+.bread_crumbs {
+    width: 50%;
+    min-width: 960px;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+
+@media (max-width: 960px) {
+    .bread_crumbs {
+        width: 90%;
+        min-width: auto;
+    }
+}
+
+.bread_crumbs li {
+    margin-right: 10px;
+}
+
+.bread_crumbs li::after {
+    content: '>';
+    margin-left: 10px;
+}
+
+.bread_crumbs li:last-child::after {
+    display: none;
+}
+
+.bread_crumbs a {
+    color: #FF2F54;
+}
+
 /*FOOTER*/
 footer {
     background-color: var(--head_foot_bg_color);
@@ -480,7 +511,10 @@ footer hr {
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 480px) {    
+    footer {
+        margin-top: 10px;
+    }
     .first-grid {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(9, auto-fit);
