@@ -1,0 +1,37 @@
+main {
+    width: 50%;
+    min-width: 960px;
+    margin: 0 auto;
+    margin-top: 105px;
+    box-sizing: content-box;
+    padding-bottom: 64px;
+    border-bottom: #F2F2F2 2px solid;
+}
+
+main h1 {
+    font-size: var(--head1);
+}
+
+main p {
+    font-size: var(--ext_p);
+    margin-top: 10px;
+}
+
+address, p, a {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.link {
+    color: #FF2F54;
+}
+
+@media (max-width: 960px) {    
+    main {
+        width: 90%;
+        min-width: auto;
+        margin-top: 20px;
+    }
+}
