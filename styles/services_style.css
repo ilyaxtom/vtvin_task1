@@ -1,0 +1,97 @@
+main {
+    width: 50%;
+    min-width: 960px;
+    margin: 0 auto;
+    margin-top: 105px;
+    box-sizing: content-box;
+    padding-bottom: 64px;
+    border-bottom: #F2F2F2 2px solid;
+    display: flex;
+}
+
+main > aside {
+    width: 30%;
+}
+
+main > section {
+    width: 70%;
+}
+
+aside ul {
+    flex-direction: column;
+    margin-right: 10px;
+}
+
+aside ul li {
+    margin-bottom: 5px;
+    font-size: 18px;
+    padding: 8px 20px;
+    color: #495057;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+aside ul li.checked {
+    border: 1px solid var(--accent_color);
+    color: var(--accent_color);
+}
+
+main h1 {
+    font-size: var(--head1);
+    margin-bottom: 10px;
+}
+
+main h2 {
+    margin-top: 20px;
+}
+
+main p {
+    font-size: var(--ext_p);
+}
+
+main > section ul{
+    flex-direction: column;
+    list-style: circle;
+    margin-left: 10px;
+}
+
+section > div {
+    display: none;
+}
+
+section > div.checked {
+    display: block;
+}
+
+@media (max-width: 960px) {
+    main {
+        width: 90%;
+        min-width: auto;
+        margin-top: 20px;
+        flex-direction: column;
+    }
+
+    main > aside, main > section {
+        width: 100%;
+    }
+
+    aside ul {
+        flex-direction: row;
+        justify-content: left;
+        width: 100%;
+    }
+
+    aside ul li {
+        margin-right: 5px;
+    }
+
+    section > div {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    aside ul {
+        flex-wrap: wrap;
+    }
+}

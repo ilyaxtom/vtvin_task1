@@ -164,6 +164,14 @@ section.cards > .card > p:nth-child(3) {
     display: inline-flex;
 }
 
+.services a {
+    transition: .3s;
+}
+
+.services a:hover {
+    transform: scale(1.05);
+}
+
 .services > a {
     display: inline-flex;
     width: 40px;
